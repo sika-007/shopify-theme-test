@@ -1,0 +1,46 @@
+{%- assign myvariable = 'Hello world' -%}
+{{ myvariable }}
+
+{% comment %} String {% endcomment %}
+
+<br>
+
+{% assign myString = 'Hello world' %}
+{{ myString }}
+
+{% assign number = 1234 %}
+{{ number }}
+
+{% assign boolean = true %}
+{{ boolean }}
+
+{% assign myNil = null %}
+{{ myNil }}
+
+{% if undefinedVariable == null %}
+  <p>undefinedVariable is equal to nil</p>
+{% endif %}
+
+<br>
+{% comment %} array {% endcomment %}
+{{ product.tags }}
+{% comment %} {{ product.tags[1] }} {% endcomment %}
+{{ product.tags.size }}
+<br>
+
+{% for tag in product.tags %}
+  {{ tag }}
+  <br>
+{% endfor %}
+
+<br>
+
+<p>{{ product.title }}</p>
+
+{% capture html %}
+  <div><p class="text-5xl">Helliii</p></div>
+{% endcapture %}
+
+{{ html }}
+
+<div class="text-3xl text-red-300">nice</div>

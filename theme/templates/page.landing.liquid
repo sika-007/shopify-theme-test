@@ -1,0 +1,46 @@
+{% comment %}
+  This is the landing page template. It is designed to be highly customizable with sections.
+{% endcomment %}
+
+{% layout none %}
+
+<!doctype html>
+<html lang="{{ shop.locale }}">
+  <head>
+    {% render 'meta-tags' %}
+    {# Custom meta tags for the landing page for SEO optimization. #}
+
+    <title>{{ page.title }}</title>
+
+    <style>
+      /* Inline critical CSS or additional custom styling */
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section (dynamically included from sections folder) -->
+    <header>
+      {% section 'header' %}
+    </header>
+
+    <!-- Hero Section (dynamically included from sections folder) -->
+    {% section 'hero' %}
+
+    <!-- Call-to-Action Section (another dynamic section) -->
+    {% section 'benefits' %}
+
+    <!-- Customize Section -->
+    {% section 'customize' %}
+    {% section 'comfort' %}
+    {% section 'reviews' %}
+    {% section 'faq' %}
+    {% section 'green_impact' %}
+
+    <!-- Footer (can include any additional sections or snippets here) -->
+    <footer>
+      {% section 'find_something' %}
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ 'landing-page.js' | asset_url }}"></script>
+  </body>
+</html>
