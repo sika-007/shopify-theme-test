@@ -1,8 +1,8 @@
 <div class="flex gap-[10px] items-center">
-  <div>
+  <div class="shrink-0 w-[32px] sm:w-[42px] h-[32px] sm:h-[42px]">
     <img width="42px" height="42px" src="{{ img_url | image_url: "large" | asset_url }}">
   </div>
-  <div class="max-w-[425px]">
+  <div class="max-w-[455px]">
     {% render 'body_text', body: body %}
   </div>
 </div>

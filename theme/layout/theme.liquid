@@ -56,10 +56,10 @@
             body.classList.toggle('hidden');
             // Change the image based on the visibility of the body
             if (body.classList.contains('hidden')) {
-              image.src = "{{ 'icons/+.svg' | asset_url }}"; // Set to the plus icon
+              image.src = "{{ '+.svg' | asset_url }}"; // Set to the plus icon
               image.style.marginTop = '0px';
             } else {
-              image.src = "{{ 'icons/-.svg' | asset_url }}"; // Set to the minus icon
+              image.src = "{{ '-.svg' | asset_url }}"; // Set to the minus icon
               image.style.marginTop = '8px';
             }
           });

@@ -1,24 +1,18 @@
-<div class="pt-24 mb-28 flex flex-col-reverse sm:flex-row px-7 sm:px-24 items-center">
+<div class="pt-24 mb-28 flex flex-col-reverse sm:flex-row px-7 sm:px-24 gap-4 items-center">
   <div class="flex flex-col items-center sm:items-start gap-8 max-w-500">
     <h1 class="text-center sm:text-start">
       {% render 'header_text', text: "Don't apologize for being too comfortable" %}
     </h1>
-    <ul class="font-semibold">
+    <ul class="font-semibold flex flex-col gap-6">
       <li>
-        {% render 'hero_div',
-          img_url: 'icons/ben_icon3.png',
-          body: 'Beautiful, comfortable loungewear for day or night.'
-        %}
+        {% render 'hero_div', img_url: 'ben_icon3.png', body: 'Beautiful, comfortable loungewear for day or night.' %}
+      </li>
+      <li>
+        {% render 'hero_div', img_url: 'ben_icon1.png', body: 'No wasteful extras, like tags or plastic packaging.' %}
       </li>
       <li>
         {% render 'hero_div',
-          img_url: 'icons/ben_icon1.png',
-          body: 'No wasteful extras, like tags or plastic packaging.'
-        %}
-      </li>
-      <li>
-        {% render 'hero_div',
-          img_url: 'icons/ben_icon4.png',
+          img_url: 'ben_icon4.png',
           body: 'Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.'
         %}
       </li>
@@ -28,6 +22,6 @@
     </div>
   </div>
   <div>
-    <img src="{{ "images/hero_image.png" | asset_url }}">
+    <img src="{{ "hero_image.png" | asset_url }}">
   </div>
 </div>

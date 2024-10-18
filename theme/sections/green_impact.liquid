@@ -3,23 +3,13 @@
     {% render 'header_text', text: 'Our total green impact' %}
   </div>
   <div class="flex flex-col sm:flex-row items-center">
+    {% render 'gi_card', border: true, img_url: 'gi_icon1.png', head_text: '3,927 kg', body_text: 'of CO2 saved' %}
     {% render 'gi_card',
       border: true,
-      img_url: 'icons/gi_icon1.png',
-      head_text: '3,927 kg',
-      body_text: 'of CO2 saved'
-    %}
-    {% render 'gi_card',
-      border: true,
-      img_url: 'icons/gi_icon2.png',
+      img_url: 'gi_icon2.png',
       head_text: '2,546,167 days',
       body_text: 'of drinking water saved'
     %}
-    {% render 'gi_card',
-      border: false,
-      img_url: 'icons/gi_icon3.png',
-      head_text: '7,321 kWh',
-      body_text: 'of energy saved'
-    %}
+    {% render 'gi_card', border: false, img_url: 'gi_icon3.png', head_text: '7,321 kWh', body_text: 'of energy saved' %}
   </div>
 </div>
