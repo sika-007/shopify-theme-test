@@ -1,8 +1,8 @@
-<div class="flex gap-8">
-  <div class="mb-3">
+<div class="flex flex-col sm:flex-row items-center sm:items:start gap-2 sm:gap-8">
+  <div class="sm:mb-3">
     <img width="42px" height="42px" src="{{ img_url | image_url: "large" | asset_url }}">
   </div>
-  <div class="max-w-[500px]">
+  <div class="max-w-[500px] flex flex-col text-center sm:text-start">
     <div class="text-primary mb-[22px] mt-[11px]">
       {% render 'point_text', point: point %}
     </div>

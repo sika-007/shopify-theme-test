@@ -1,15 +1,15 @@
-<div class="px-24 pt-20 mb-8 w-full bg-gradient bg-cover bg-top">
+<div class="relative px-10 sm:px-24 pt-20 mb-8 w-full bg-gradient bg-cover bg-top">
   <div class="font-semibold text-center mb-5">{% render 'body_text', body: 'as seen in' %}</div>
-  <div class="flex w-full items-center justify-center flex-wrap gap-14 mb-[110px]">
+  <div class="flex w-full items-center justify-center flex-wrap gap-14 mb-[50px] sm:mb-[110px]">
     <img width="178px" height="22px" src="{{ "logos/co_1.png" | asset_url }}">
     <img width="111px" height="52px" src="{{ "logos/co_2.png" | asset_url }}">
-    <img width="271px" height="53px" src="{{ "logos/co_3.png" | asset_url }}">
-    <img width="192px" height="37px" src="{{ "logos/co_4.png" | asset_url }}">
-    <img width="194px" height="58px" src="{{ "logos/co_5.png" | asset_url }}">
+    <img width="271px" class="hidden sm:blcck" height="53px" src="{{ "logos/co_3.png" | asset_url }}">
+    <img width="192px" class="hidden sm:block" height="37px" src="{{ "logos/co_4.png" | asset_url }}">
+    <img width="194px" class="hidden sm:block" height="58px" src="{{ "logos/co_5.png" | asset_url }}">
   </div>
-  <div class="flex items-center justify-between gap-14">
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-14">
     <div>
-      <div class="mb-20">
+      <div class="text-center sm:text-start mb-8 sm:mb-20">
         {% render 'header_text', text: 'Loungewear you can be proud of.' %}
       </div>
       <ul class="flex flex-col gap-4">
@@ -45,6 +45,23 @@
     </div>
     <div class="max-w-[400px]">
       <img class="w-full" src="{{ "images/benefit_image.jpg" | asset_url }}">
+    </div>
+  </div>
+
+  <div
+    class="absolute -top-24 bg-white w-[370px]  sm:w-[420px] p-3 shadow-lg flex flex-col items-center justify-center gap-4 rounded-[8px]"
+  >
+    <div class="flex items-center justify-start w-full gap-2">
+      <div class="flex items-center gap-1">
+        <img src="{{ "images/person.png" | asset_url }}" alt="stars" width="40px" height="40px">
+        {% render 'body_text', body: 'Amy P.' %}
+        {% render 'people_star', text: 'One of 500+ 5 Star Reviews Online' %}
+      </div>
+    </div>
+    <div class="text-start">
+      {% render 'testimonial-body_text',
+        text: 'Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. Quality product on every level. From the compostable packaging, to the supplied washing bag, even the garments smells like fresh herbs when I first held them.'
+      %}
     </div>
   </div>
 </div>
