@@ -1,0 +1,26 @@
+name: Deploy Shopify Theme
+
+on:
+  push:
+    branches:
+      - main # Trigger this action on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Copy theme files to root
+        run: |
+          cp -R theme/* .  # Copies the theme files from the "theme" directory to the root
+
+      - name: Push to deploy branch
+        run: |
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "Your Name"
+          git add .
+          git commit -m "Deploy theme"
+          git push origin deploy-branch  # Pushes the changes to the deploy branch
