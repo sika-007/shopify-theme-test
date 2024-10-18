@@ -37,6 +37,35 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Select all FAQ items
+        const faqItems = document.querySelectorAll('[data-faq]');
+
+        faqItems.forEach(function (item) {
+          // Get the toggle element (the image)
+          const toggle = item.querySelector('[data-faq-toggle]');
+          // Get the body content that needs to be toggled
+          const body = item.querySelector('[data-faq-body]');
+          // Get the image inside the toggle div
+          const image = toggle.querySelector('img');
+
+          // Add a click event listener to the toggle
+          toggle.addEventListener('click', function () {
+            // Toggle the hidden class on the body
+            body.classList.toggle('hidden');
+            // Change the image based on the visibility of the body
+            if (body.classList.contains('hidden')) {
+              image.src = "{{ 'icons/+.svg' | asset_url }}"; // Set to the plus icon
+              image.style.marginTop = '0px';
+            } else {
+              image.src = "{{ 'icons/-.svg' | asset_url }}"; // Set to the minus icon
+              image.style.marginTop = '8px';
+            }
+          });
+        });
+      });
+    </script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

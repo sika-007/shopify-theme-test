@@ -1,0 +1,14 @@
+<div
+  class="w-[338px] p-10 shadow-lg flex flex-col items-center justify-center gap-4 rounded-[8px]"
+>
+  <div class="flex items-center justify-start w-full gap-[14px]">
+    <div class="bg-primary w-10 h-10 rounded-full"></div>
+    <div>
+      <img src="{{ "images/stars.png" | asset_url }}" alt="stars" width="60px" height="10px">
+      {% render 'body_text', body: name %}
+    </div>
+  </div>
+  <div class="text-start">
+    {% render 'testimonial-body_text', text: body_text | default: "Just some text to go with" %}
+  </div>
+</div>

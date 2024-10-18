@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "snippet_test": {
+      "type": "snippet_test"
+    },
     "hero": {
       "type": "hero"
     },
@@ -31,5 +34,5 @@
       "type": "green_impact"
     },
   },
-  "order": ["hero", "benefits", "customize", "comfort", "reviews", "faq", "green_impact"]
+  "order": ["hero", "benefits", "customize", "comfort", "reviews", "faq", "green_impact", "snippet_test"]
 }

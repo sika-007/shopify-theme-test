@@ -1,0 +1,16 @@
+{% assign bg = bg_color %}
+
+<div
+  style="background-color: {{ bg }}"
+  class="w-[346px] rounded-lg h-[321px] flex flex-col items-center justify-center gap-4 p-9"
+>
+  <div cla>
+    <img width="51px" height="51px" alt="{{ alt_text }}" src="{{ img_url | image_url: "large" | asset_url }}">
+  </div>
+  <div class="text-center text-primary">
+    {% render 'point_text', head_text: head_text | default: "Ethically sourced" %}
+  </div>
+  <div class="text-center">
+    {% render 'body_text', body_text: body_text | default: "Just some text to go with" %}
+  </div>
+</div>

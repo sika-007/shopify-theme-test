@@ -1,0 +1,13 @@
+<div
+  class="w-[200px] rounded-lg flex flex-col items-center justify-center p-9"
+>
+  <div class="text-center mb-[22px] flex justify-center items-center aspect-square bg-secondary bg-opacity-5 p-2 rounded-full">
+    <img width="51px" height="51px" alt="{{ alt_text }}" src="{{ img_url | image_url: "large" | asset_url }}">
+  </div>
+  <div class="text-primary text-center font-bold mb-1">
+    {% render 'point_text', point: head_text | default: "Ethically sourced" %}
+  </div>
+  <div class="text-primary text-[14px] text-center">
+    {% render 'body_text', body: body_text | default: "Just some text to go with", text_color: "#01005B" %}
+  </div>
+</div>

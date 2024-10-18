@@ -1,0 +1,10 @@
+<button class="bg-primary rounded-[5px] flex items-center py-4 px-16 gap-2">
+  <p class="text-button">
+    {{ text | default: 'Customize Your Outfit' }}
+    {% if withArrow %}
+      <div>
+        <img width="20px" height="20px" src="{{ "icons/arrow_right.png" | asset_url }}" class="">
+      </div>
+    {% endif %}
+  </p>
+</button>

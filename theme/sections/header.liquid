@@ -1,0 +1,22 @@
+<div class="fixed bg-white flex items-center justify-between w-screen py-8 px-24 z-10">
+  <div>
+    <img src="{{ "logos/logo.png" | asset_url }}" width="200px" height="35px">
+  </div>
+  <ul class="flex gap-[12px] items-center">
+    <li>
+      <a href="#comfort">{% render 'body_text', body: 'How it works' %}</a>
+    </li>
+    <li>
+      <a href="#benefits">{% render 'body_text', body: 'Benefits' %}</a>
+    </li>
+    <li>
+      <a href="#reviews">{% render 'body_text', body: 'Reviews' %}</a>
+    </li>
+    <li>
+      <a href="#faq">{% render 'body_text', body: 'FAQs' %}</a>
+    </li>
+    <li>
+      <a href="/cart">{% render 'body_text', body: 'Cart' %}</a>
+    </li>
+  </ul>
+</div>
