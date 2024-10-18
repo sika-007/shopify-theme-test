@@ -8,9 +8,9 @@
     <img width="51px" height="51px" alt="{{ alt_text }}" src="{{ img_url | image_url: "large" | asset_url }}">
   </div>
   <div class="text-center text-primary">
-    {% render 'point_text', head_text: head_text | default: "Ethically sourced" %}
+    {% render 'point_text', point: head_text | default: "Ethically sourced" %}
   </div>
   <div class="text-center">
-    {% render 'body_text', body_text: body_text | default: "Just some text to go with" %}
+    {% render 'body_text', body: body_text | default: "Just some text to go with" %}
   </div>
 </div>

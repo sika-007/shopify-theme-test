@@ -1,1 +1,25 @@
-<div>green impact</div>
+<div class="px-24 pt-20 pb-8 flex flex-col items-center mb-8 w-full bg-[#F0EEEF]">
+  <div class="mb-4">
+    {% render 'header_text', text: 'Our total green impact' %}
+  </div>
+  <div class="flex items-center odd last:border-r-0">
+    {% render 'gi_card',
+      border: true,
+      img_url: 'icons/gi_icon1.png',
+      head_text: '3,927 kg',
+      body_text: 'of CO2 saved'
+    %}
+    {% render 'gi_card',
+      border: true,
+      img_url: 'icons/gi_icon2.png',
+      head_text: '2,546,167 days',
+      body_text: 'of drinking water saved'
+    %}
+    {% render 'gi_card',
+      border: false,
+      img_url: 'icons/gi_icon3.png',
+      head_text: '7,321 kWh',
+      body_text: 'of energy saved'
+    %}
+  </div>
+</div>

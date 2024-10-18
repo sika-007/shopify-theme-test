@@ -14,7 +14,8 @@ module.exports = {
         comfort_card3: "#EDEDED",
       },
       backgroundImage: {
-        gradient: `linear-gradient(180deg, var(--tw-colors-gradient-top) 0%, var(--tw-colors-gradient-bottom) 100%)`,
+        gradient: `linear-gradient(180deg, #F9F0E5 0%, #FFFFFF 100%)`,
+        gradient_bottom: `linear-gradient(0deg, #F9F0E5 0%, #FFFFFF 100%)`,
       },
       fontFamily: {
         "sofia-pro": ["Sofia Pro", "sans-serif"],

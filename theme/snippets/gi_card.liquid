@@ -1,8 +1,9 @@
 <div
-  class="w-[200px] rounded-lg flex flex-col items-center justify-center p-9"
+  style="border-right: {% if border %} 2px solid #C4C4C480; {% endif %}"
+  class="w-[250px] flex flex-col items-center justify-center p-9 border-gray-400"
 >
-  <div class="text-center mb-[22px] flex justify-center items-center aspect-square bg-secondary bg-opacity-5 p-2 rounded-full">
-    <img width="51px" height="51px" alt="{{ alt_text }}" src="{{ img_url | image_url: "large" | asset_url }}">
+  <div class="text-center mb-[22px] flex justify-center items-center w-fit aspect-square bg-secondary bg-opacity-5 p-2 rounded-full">
+    <img width="30px" height="30px" alt="{{ alt_text }}" src="{{ img_url | image_url: "large" | asset_url }}">
   </div>
   <div class="text-primary text-center font-bold mb-1">
     {% render 'point_text', point: head_text | default: "Ethically sourced" %}

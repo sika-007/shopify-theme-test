@@ -1,1 +1,50 @@
-<div>benefits</div>
+<div class="px-24 pt-20 mb-8 w-full bg-gradient bg-cover bg-top">
+  <div class="font-semibold text-center mb-5">{% render 'body_text', body: 'as seen in' %}</div>
+  <div class="flex w-full items-center justify-center flex-wrap gap-14 mb-[110px]">
+    <img width="178px" height="22px" src="{{ "logos/co_1.png" | asset_url }}">
+    <img width="111px" height="52px" src="{{ "logos/co_2.png" | asset_url }}">
+    <img width="271px" height="53px" src="{{ "logos/co_3.png" | asset_url }}">
+    <img width="192px" height="37px" src="{{ "logos/co_4.png" | asset_url }}">
+    <img width="194px" height="58px" src="{{ "logos/co_5.png" | asset_url }}">
+  </div>
+  <div class="flex items-center justify-between gap-14">
+    <div>
+      <div class="mb-20">
+        {% render 'header_text', text: 'Loungewear you can be proud of.' %}
+      </div>
+      <ul class="flex flex-col gap-4">
+        <li>
+          {% render 'benefit_div',
+            img_url: 'icons/ben_icon1.png',
+            point: 'Ethically sourced.',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. '
+          %}
+        </li>
+        <li>
+          {% render 'benefit_div',
+            img_url: 'icons/ben_icon2.png',
+            point: 'Made for living in.',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. '
+          %}
+        </li>
+        <li>
+          {% render 'benefit_div',
+            img_url: 'icons/ben_icon3.png',
+            point: 'Responsibly made.',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. '
+          %}
+        </li>
+        <li>
+          {% render 'benefit_div',
+            img_url: 'icons/ben_icon4.png',
+            point: 'Unimaginably comfortable.',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. '
+          %}
+        </li>
+      </ul>
+    </div>
+    <div class="max-w-[400px]">
+      <img class="w-full" src="{{ "images/benefit_image.jpg" | asset_url }}">
+    </div>
+  </div>
+</div>

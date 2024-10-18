@@ -1,1 +1,48 @@
-<div>faq</div>
+<div class="px-24 flex items-start justify-between pt-20 mb-8 w-full bg-cover bg-top">
+  <div class="max-w-[620px]">
+    <div class="mb-20">
+      {% render 'header_text', text: 'Frequently asked quetions' %}
+    </div>
+    <ul class="flex flex-col gap-4 last:border-gray-200 last:border-b last:pb-4">
+      <li>
+        {% render 'faq_div',
+          faq_point: 'lorem ipsum dolor sit amet',
+          body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.'
+        %}
+      </li>
+      <li>
+        {% render 'faq_div',
+          faq_point: 'lorem ipsum dolor sit amet',
+          body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.'
+        %}
+      </li>
+      <li>
+        {% render 'faq_div',
+          faq_point: 'lorem ipsum dolor sit amet',
+          body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.'
+        %}
+      </li>
+      <li>
+        {% render 'faq_div',
+          faq_point: 'lorem ipsum dolor sit amet',
+          body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.'
+        %}
+      </li>
+      <li>
+        {% render 'faq_div',
+          faq_point: 'lorem ipsum dolor sit amet',
+          body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.'
+        %}
+      </li>
+      <li>
+        {% render 'faq_div',
+          faq_point: 'lorem ipsum dolor sit amet',
+          body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.'
+        %}
+      </li>
+    </ul>
+  </div>
+  <div class="max-w-[400px]">
+    <img class="w-full" src="{{ "images/faq_image.png" | asset_url }}">
+  </div>
+</div>
