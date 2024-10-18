@@ -1,9 +1,9 @@
-<div class="pt-24 flex px-24 items-center justify-between bg-comfort_card1 pb-8">
+<div class="pt-10 sm:pt-24 flex flex-col-reverse gap-6 sm:gap-0 sm:flex-row px-7 sm:px-24 items-center justify-between bg-comfort_card1 pb-8">
   <div>
     <img src="{{ "images/customize_image.png" | asset_url }}">
   </div>
   <div class="flex flex-col gap-8 max-w-[600px]">
-    <h1>{% render 'header_text', text: 'be Your Best Self.' %}</h1>
+    <h1 class="text-center sm:text-start">{% render 'header_text', text: 'be Your Best Self.' %}</h1>
 
     <div class="flex flex-col gap-5">
       <div>{% render 'body_text', body: 'Hi! My name’s Sika, and I founded Sika in Africa. ' %}</div>

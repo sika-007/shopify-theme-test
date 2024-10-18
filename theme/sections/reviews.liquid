@@ -1,16 +1,19 @@
-<div class="pb-8 py-24 flex flex-col items-center gap-[55px]">
-  <div class="mx-24 max-w-[600px]">
+<div class="pb-8 py-10 sm:py-24 flex flex-col items-center gap-[30px] sm:gap-[55px]">
+  <div class="mx-7 sm:mx-24 max-w-[600px]">
     {% render 'header_text', text: 'What are our fans saying' %}
   </div>
-  <div class="mx-24 max-w-[600px] text-center">
+  <div class="mx-7 sm:mx-24 max-w-[600px] text-center">
     {% render 'body_text',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. Fusce non nibh luctus.'
     %}
   </div>
-  <div>
+  <div class="hidden sm:block">
     <img src="{{ "images/people.jpg" | asset_url }}">
   </div>
-  <div class="flex mx-24 items-start gap-10">
+  <div class="sm:hidden">
+    <img src="{{ "images/people_mobile.png" | asset_url }}">
+  </div>
+  <div class="flex mx-7 sm:mx-24 flex-wrap justify-center items-start gap-10">
     {% render 'review_card',
       name: 'Jane. S',
       body_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.'
