@@ -1,22 +1,32 @@
-<div class="fixed bg-white flex items-center justify-center sm:justify-between w-screen py-8 px-7 sm:px-24 z-10">
-  <div>
-    <img src="{{ "logo.png" | asset_url }}" width="200px" height="35px">
+<div class="sm:fixed z-20">
+  <div class="hidden sm:flex items-center justify-center bg-gradient-top py-3">
+    {% render 'body_text',
+      body: 'CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)   |   FREE SHIPPING on orders > $200   |   easy 45 day return window.'
+    %}
   </div>
-  <ul class="hidden sm:flex gap-[12px] items-center">
-    <li>
-      <a href="#comfort">{% render 'body_text', body: 'How it works' %}</a>
-    </li>
-    <li>
-      <a href="#benefits">{% render 'body_text', body: 'Benefits' %}</a>
-    </li>
-    <li>
-      <a href="#reviews">{% render 'body_text', body: 'Reviews' %}</a>
-    </li>
-    <li>
-      <a href="#faq">{% render 'body_text', body: 'FAQs' %}</a>
-    </li>
-    <li>
-      <a href="/cart">{% render 'body_text', body: 'Cart' %}</a>
-    </li>
-  </ul>
+  <div class="sm:hidden flex items-center justify-center bg-gradient-top py-3">
+    {% render 'body_text', body: 'FREE SHIPPING on orders > $200' %}
+  </div>
+  <div class="bg-white flex items-center justify-center sm:justify-between w-screen py-4 sm:py-8 px-7 sm:px-24 z-10">
+    <div>
+      <img src="{{ "logo.png" | asset_url }}" width="200px" height="35px">
+    </div>
+    <ul class="hidden sm:flex gap-[12px] items-center">
+      <li>
+        <a href="#comfort">{% render 'body_text', body: 'How it works' %}</a>
+      </li>
+      <li>
+        <a href="#benefits">{% render 'body_text', body: 'Benefits' %}</a>
+      </li>
+      <li>
+        <a href="#reviews">{% render 'body_text', body: 'Reviews' %}</a>
+      </li>
+      <li>
+        <a href="#faq">{% render 'body_text', body: 'FAQs' %}</a>
+      </li>
+      <li>
+        <a href="/cart">{% render 'body_text', body: 'Cart' %}</a>
+      </li>
+    </ul>
+  </div>
 </div>
